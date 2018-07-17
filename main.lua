@@ -6,7 +6,7 @@
 -- Inspired by : https://www.gamecodeur.fr --- https://www.gamecodeur.fr/liste-ateliers/atelier-lunar-lander-love2d/
 
 
--- DEBUG --------------------------------------------------------------------------------------------------------------
+-- CONFIG --------------------------------------------------------------------------------------------------------------
 
 -- This line is used to display traces in the console during the execution
 io.stdout:setvbuf('no')
@@ -35,13 +35,13 @@ function rebound()
   if lander.y <= 0 then
     lander.vy = lander.vy * - 1
   end
-  if lander.y >= hauteur then
+  if lander.y >= height then
     lander.vy = lander.vy * - 1
   end
   if lander.x <= 0 then
     lander.vx = lander.vx * - 1
   end
-  if lander.x >= largeur then
+  if lander.x >= width then
     lander.vx = lander.vx * - 1
   end
 end
@@ -49,11 +49,11 @@ end
 -- LÖVE ---------------------------------------------------------------------------------------------------------------
 
 function love.load()
-  largeur = love.graphics.getWidth()
-  hauteur = love.graphics.getHeight()
+  width = love.graphics.getWidth()
+  height = love.graphics.getHeight()
 
-  lander.x = largeur / 2
-  lander.y = hauteur / 2
+  lander.x = width / 2
+  lander.y = height / 2
 
 end
 
