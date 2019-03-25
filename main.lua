@@ -5,8 +5,6 @@
 
 -- Inspired by : https://www.gamecodeur.fr --- https://www.gamecodeur.fr/liste-ateliers/atelier-lunar-lander-love2d/
 
--- test 2 smartgit
-
 
 -- CONFIG --------------------------------------------------------------------------------------------------------------
 
