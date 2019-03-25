@@ -14,6 +14,8 @@ io.stdout:setvbuf('no')
 -- This line is used to debug step by step in ZeroBrane Studio
 if arg[#arg] == "-debug" then require("mobdebug").start() end
 
+-- test commit
+
 
 -- VARIABLES ----------------------------------------------------------------------------------------------------------
 
